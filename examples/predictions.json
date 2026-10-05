@@ -1,0 +1,521 @@
+{
+  "travel-deadline": {
+    "answer": "Travel reimbursements must be submitted within 30 days of the trip ending.",
+    "abstained": false,
+    "citations": [
+      {
+        "document_id": "travel",
+        "chunk_id": "f3d1301128f8902797eabd79",
+        "source": "synthetic://handbook/travel",
+        "quote": "Travel reimbursements must be submitted within 30 days of the trip ending.",
+        "start": 0,
+        "end": 74
+      }
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "f3d1301128f8902797eabd79",
+        "document_id": "travel",
+        "title": "Travel and expenses",
+        "source": "synthetic://handbook/travel",
+        "text": "Travel reimbursements must be submitted within 30 days of the trip ending. Every expense over 25 dollars requires an itemized receipt. International travel needs approval from the department lead before booking.",
+        "start": 0,
+        "end": 211,
+        "score": 0.01639344262295082,
+        "lexical_overlap": 1.0,
+        "cosine_similarity": null
+      },
+      {
+        "chunk_id": "04eaf1a494b9d54128d350a5",
+        "document_id": "retention",
+        "title": "Document retention",
+        "source": "synthetic://handbook/retention",
+        "text": "Project working documents are retained for three years after project closure. Archived documents remain searchable until their retention deadline. Documents under a preservation hold must not be deleted until the hold is lifted.",
+        "start": 0,
+        "end": 228,
+        "score": 0.016129032258064516,
+        "lexical_overlap": 0.25,
+        "cosine_similarity": null
+      }
+    ],
+    "latency_ms": 13.906,
+    "mode": "lexical",
+    "answerer": "extractive"
+  },
+  "receipt": {
+    "answer": "Every expense over 25 dollars requires an itemized receipt.",
+    "abstained": false,
+    "citations": [
+      {
+        "document_id": "travel",
+        "chunk_id": "f3d1301128f8902797eabd79",
+        "source": "synthetic://handbook/travel",
+        "quote": "Every expense over 25 dollars requires an itemized receipt.",
+        "start": 75,
+        "end": 134
+      }
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "f3d1301128f8902797eabd79",
+        "document_id": "travel",
+        "title": "Travel and expenses",
+        "source": "synthetic://handbook/travel",
+        "text": "Travel reimbursements must be submitted within 30 days of the trip ending. Every expense over 25 dollars requires an itemized receipt. International travel needs approval from the department lead before booking.",
+        "start": 0,
+        "end": 211,
+        "score": 0.01639344262295082,
+        "lexical_overlap": 0.8,
+        "cosine_similarity": null
+      }
+    ],
+    "latency_ms": 2.037,
+    "mode": "lexical",
+    "answerer": "extractive"
+  },
+  "access-expiry": {
+    "answer": "Access requests require approval from the resource owner and expire after 90 days.",
+    "abstained": false,
+    "citations": [
+      {
+        "document_id": "access",
+        "chunk_id": "a50c99907c9f69ac4b89cbc7",
+        "source": "synthetic://handbook/access",
+        "quote": "Access requests require approval from the resource owner and expire after 90 days.",
+        "start": 0,
+        "end": 82
+      }
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "a50c99907c9f69ac4b89cbc7",
+        "document_id": "access",
+        "title": "Access requests",
+        "source": "synthetic://handbook/access",
+        "text": "Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.",
+        "start": 0,
+        "end": 218,
+        "score": 0.01639344262295082,
+        "lexical_overlap": 1.0,
+        "cosine_similarity": null
+      },
+      {
+        "chunk_id": "95492ba0afbc9abfb452ec62",
+        "document_id": "onboarding",
+        "title": "New starter guide",
+        "source": "synthetic://handbook/onboarding",
+        "text": "New employees complete security training within their first ten working days. Their manager assigns a mentor during the first week. Equipment requests go to the workplace services queue.",
+        "start": 0,
+        "end": 186,
+        "score": 0.016129032258064516,
+        "lexical_overlap": 0.3333333333333333,
+        "cosine_similarity": null
+      }
+    ],
+    "latency_ms": 1.917,
+    "mode": "lexical",
+    "answerer": "extractive"
+  },
+  "contractors": {
+    "answer": "Contractors receive read-only access by default.",
+    "abstained": false,
+    "citations": [
+      {
+        "document_id": "access",
+        "chunk_id": "a50c99907c9f69ac4b89cbc7",
+        "source": "synthetic://handbook/access",
+        "quote": "Contractors receive read-only access by default.",
+        "start": 83,
+        "end": 131
+      }
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "a50c99907c9f69ac4b89cbc7",
+        "document_id": "access",
+        "title": "Access requests",
+        "source": "synthetic://handbook/access",
+        "text": "Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.",
+        "start": 0,
+        "end": 218,
+        "score": 0.01639344262295082,
+        "lexical_overlap": 1.0,
+        "cosine_similarity": null
+      }
+    ],
+    "latency_ms": 1.751,
+    "mode": "lexical",
+    "answerer": "extractive"
+  },
+  "backup-frequency": {
+    "answer": "Database backups run every six hours and are retained for 35 days.",
+    "abstained": false,
+    "citations": [
+      {
+        "document_id": "backups",
+        "chunk_id": "5f75ae354ee500ec9cc891e2",
+        "source": "synthetic://runbooks/backups",
+        "quote": "Database backups run every six hours and are retained for 35 days.",
+        "start": 0,
+        "end": 66
+      }
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "5f75ae354ee500ec9cc891e2",
+        "document_id": "backups",
+        "title": "Backup recovery",
+        "source": "synthetic://runbooks/backups",
+        "text": "Database backups run every six hours and are retained for 35 days. Restore drills happen on the first Monday of each month. The recovery time objective is two hours, while the recovery point objective is six hours.",
+        "start": 0,
+        "end": 214,
+        "score": 0.01639344262295082,
+        "lexical_overlap": 0.75,
+        "cosine_similarity": null
+      }
+    ],
+    "latency_ms": 1.688,
+    "mode": "lexical",
+    "answerer": "extractive"
+  },
+  "restore-drill": {
+    "answer": "Restore drills happen on the first Monday of each month.",
+    "abstained": false,
+    "citations": [
+      {
+        "document_id": "backups",
+        "chunk_id": "5f75ae354ee500ec9cc891e2",
+        "source": "synthetic://runbooks/backups",
+        "quote": "Restore drills happen on the first Monday of each month.",
+        "start": 67,
+        "end": 123
+      }
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "5f75ae354ee500ec9cc891e2",
+        "document_id": "backups",
+        "title": "Backup recovery",
+        "source": "synthetic://runbooks/backups",
+        "text": "Database backups run every six hours and are retained for 35 days. Restore drills happen on the first Monday of each month. The recovery time objective is two hours, while the recovery point objective is six hours.",
+        "start": 0,
+        "end": 214,
+        "score": 0.01639344262295082,
+        "lexical_overlap": 1.0,
+        "cosine_similarity": null
+      }
+    ],
+    "latency_ms": 1.73,
+    "mode": "lexical",
+    "answerer": "extractive"
+  },
+  "incident-updates": {
+    "answer": "The incident commander posts an update every 20 minutes.",
+    "abstained": false,
+    "citations": [
+      {
+        "document_id": "incidents",
+        "chunk_id": "ef9bc7e6b64aa65a0a45b8c0",
+        "source": "synthetic://runbooks/incidents",
+        "quote": "The incident commander posts an update every 20 minutes.",
+        "start": 68,
+        "end": 124
+      }
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "ef9bc7e6b64aa65a0a45b8c0",
+        "document_id": "incidents",
+        "title": "Incident response",
+        "source": "synthetic://runbooks/incidents",
+        "text": "For a severity-one incident, page the on-call engineer immediately. The incident commander posts an update every 20 minutes. A blameless incident review is due within five business days after resolution.",
+        "start": 0,
+        "end": 203,
+        "score": 0.01639344262295082,
+        "lexical_overlap": 0.6,
+        "cosine_similarity": null
+      }
+    ],
+    "latency_ms": 1.776,
+    "mode": "lexical",
+    "answerer": "extractive"
+  },
+  "release-checks": {
+    "answer": "Production releases require passing unit tests and retrieval regression checks.",
+    "abstained": false,
+    "citations": [
+      {
+        "document_id": "releases",
+        "chunk_id": "0dc5bc2bd5497d4212d8ebe6",
+        "source": "synthetic://engineering/releases",
+        "quote": "Production releases require passing unit tests and retrieval regression checks.",
+        "start": 0,
+        "end": 79
+      }
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "0dc5bc2bd5497d4212d8ebe6",
+        "document_id": "releases",
+        "title": "Release process",
+        "source": "synthetic://engineering/releases",
+        "text": "Production releases require passing unit tests and retrieval regression checks. Every release records the model revision and dataset checksum. Roll back a release when the error rate exceeds two percent for ten consecutive minutes.",
+        "start": 0,
+        "end": 231,
+        "score": 0.01639344262295082,
+        "lexical_overlap": 1.0,
+        "cosine_similarity": null
+      },
+      {
+        "chunk_id": "e07a9e28e1d3a8ca33844961",
+        "document_id": "procurement",
+        "title": "Purchasing policy",
+        "source": "synthetic://handbook/procurement",
+        "text": "Purchases above 5000 dollars require two independent approvals. Software subscriptions also need a security review before purchase. Approved vendors are reassessed every twelve months.",
+        "start": 0,
+        "end": 184,
+        "score": 0.016129032258064516,
+        "lexical_overlap": 0.3333333333333333,
+        "cosine_similarity": null
+      },
+      {
+        "chunk_id": "a50c99907c9f69ac4b89cbc7",
+        "document_id": "access",
+        "title": "Access requests",
+        "source": "synthetic://handbook/access",
+        "text": "Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.",
+        "start": 0,
+        "end": 218,
+        "score": 0.015873015873015872,
+        "lexical_overlap": 0.3333333333333333,
+        "cosine_similarity": null
+      }
+    ],
+    "latency_ms": 1.769,
+    "mode": "lexical",
+    "answerer": "extractive"
+  },
+  "retention": {
+    "answer": "Project working documents are retained for three years after project closure.",
+    "abstained": false,
+    "citations": [
+      {
+        "document_id": "retention",
+        "chunk_id": "04eaf1a494b9d54128d350a5",
+        "source": "synthetic://handbook/retention",
+        "quote": "Project working documents are retained for three years after project closure.",
+        "start": 0,
+        "end": 77
+      }
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "04eaf1a494b9d54128d350a5",
+        "document_id": "retention",
+        "title": "Document retention",
+        "source": "synthetic://handbook/retention",
+        "text": "Project working documents are retained for three years after project closure. Archived documents remain searchable until their retention deadline. Documents under a preservation hold must not be deleted until the hold is lifted.",
+        "start": 0,
+        "end": 228,
+        "score": 0.01639344262295082,
+        "lexical_overlap": 0.8,
+        "cosine_similarity": null
+      },
+      {
+        "chunk_id": "5f75ae354ee500ec9cc891e2",
+        "document_id": "backups",
+        "title": "Backup recovery",
+        "source": "synthetic://runbooks/backups",
+        "text": "Database backups run every six hours and are retained for 35 days. Restore drills happen on the first Monday of each month. The recovery time objective is two hours, while the recovery point objective is six hours.",
+        "start": 0,
+        "end": 214,
+        "score": 0.016129032258064516,
+        "lexical_overlap": 0.2,
+        "cosine_similarity": null
+      },
+      {
+        "chunk_id": "95492ba0afbc9abfb452ec62",
+        "document_id": "onboarding",
+        "title": "New starter guide",
+        "source": "synthetic://handbook/onboarding",
+        "text": "New employees complete security training within their first ten working days. Their manager assigns a mentor during the first week. Equipment requests go to the workplace services queue.",
+        "start": 0,
+        "end": 186,
+        "score": 0.015873015873015872,
+        "lexical_overlap": 0.2,
+        "cosine_similarity": null
+      }
+    ],
+    "latency_ms": 1.814,
+    "mode": "lexical",
+    "answerer": "extractive"
+  },
+  "training": {
+    "answer": "New employees complete security training within their first ten working days.",
+    "abstained": false,
+    "citations": [
+      {
+        "document_id": "onboarding",
+        "chunk_id": "95492ba0afbc9abfb452ec62",
+        "source": "synthetic://handbook/onboarding",
+        "quote": "New employees complete security training within their first ten working days.",
+        "start": 0,
+        "end": 77
+      }
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "95492ba0afbc9abfb452ec62",
+        "document_id": "onboarding",
+        "title": "New starter guide",
+        "source": "synthetic://handbook/onboarding",
+        "text": "New employees complete security training within their first ten working days. Their manager assigns a mentor during the first week. Equipment requests go to the workplace services queue.",
+        "start": 0,
+        "end": 186,
+        "score": 0.01639344262295082,
+        "lexical_overlap": 1.0,
+        "cosine_similarity": null
+      },
+      {
+        "chunk_id": "e07a9e28e1d3a8ca33844961",
+        "document_id": "procurement",
+        "title": "Purchasing policy",
+        "source": "synthetic://handbook/procurement",
+        "text": "Purchases above 5000 dollars require two independent approvals. Software subscriptions also need a security review before purchase. Approved vendors are reassessed every twelve months.",
+        "start": 0,
+        "end": 184,
+        "score": 0.016129032258064516,
+        "lexical_overlap": 0.2,
+        "cosine_similarity": null
+      },
+      {
+        "chunk_id": "a50c99907c9f69ac4b89cbc7",
+        "document_id": "access",
+        "title": "Access requests",
+        "source": "synthetic://handbook/access",
+        "text": "Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.",
+        "start": 0,
+        "end": 218,
+        "score": 0.015873015873015872,
+        "lexical_overlap": 0.2,
+        "cosine_similarity": null
+      }
+    ],
+    "latency_ms": 1.727,
+    "mode": "lexical",
+    "answerer": "extractive"
+  },
+  "purchases": {
+    "answer": "Purchases above 5000 dollars require two independent approvals.",
+    "abstained": false,
+    "citations": [
+      {
+        "document_id": "procurement",
+        "chunk_id": "e07a9e28e1d3a8ca33844961",
+        "source": "synthetic://handbook/procurement",
+        "quote": "Purchases above 5000 dollars require two independent approvals.",
+        "start": 0,
+        "end": 63
+      }
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "e07a9e28e1d3a8ca33844961",
+        "document_id": "procurement",
+        "title": "Purchasing policy",
+        "source": "synthetic://handbook/procurement",
+        "text": "Purchases above 5000 dollars require two independent approvals. Software subscriptions also need a security review before purchase. Approved vendors are reassessed every twelve months.",
+        "start": 0,
+        "end": 184,
+        "score": 0.01639344262295082,
+        "lexical_overlap": 0.8333333333333334,
+        "cosine_similarity": null
+      },
+      {
+        "chunk_id": "0dc5bc2bd5497d4212d8ebe6",
+        "document_id": "releases",
+        "title": "Release process",
+        "source": "synthetic://engineering/releases",
+        "text": "Production releases require passing unit tests and retrieval regression checks. Every release records the model revision and dataset checksum. Roll back a release when the error rate exceeds two percent for ten consecutive minutes.",
+        "start": 0,
+        "end": 231,
+        "score": 0.016129032258064516,
+        "lexical_overlap": 0.3333333333333333,
+        "cosine_similarity": null
+      },
+      {
+        "chunk_id": "a50c99907c9f69ac4b89cbc7",
+        "document_id": "access",
+        "title": "Access requests",
+        "source": "synthetic://handbook/access",
+        "text": "Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.",
+        "start": 0,
+        "end": 218,
+        "score": 0.015873015873015872,
+        "lexical_overlap": 0.16666666666666666,
+        "cosine_similarity": null
+      }
+    ],
+    "latency_ms": 1.876,
+    "mode": "lexical",
+    "answerer": "extractive"
+  },
+  "other-organization": {
+    "answer": "Access requests in this separate organization expire after seven days.",
+    "abstained": false,
+    "citations": [
+      {
+        "document_id": "access",
+        "chunk_id": "2e8ec814bd8952b6ecbdd56b",
+        "source": "synthetic://other/access",
+        "quote": "Access requests in this separate organization expire after seven days.",
+        "start": 0,
+        "end": 70
+      }
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "2e8ec814bd8952b6ecbdd56b",
+        "document_id": "access",
+        "title": "Other collection access policy",
+        "source": "synthetic://other/access",
+        "text": "Access requests in this separate organization expire after seven days. This contradicting policy tests collection isolation and duplicate document IDs.",
+        "start": 0,
+        "end": 151,
+        "score": 0.01639344262295082,
+        "lexical_overlap": 1.0,
+        "cosine_similarity": null
+      }
+    ],
+    "latency_ms": 1.661,
+    "mode": "lexical",
+    "answerer": "extractive"
+  },
+  "unknown": {
+    "answer": "",
+    "abstained": true,
+    "citations": [],
+    "retrieved": [],
+    "latency_ms": 1.57,
+    "mode": "lexical",
+    "answerer": "extractive"
+  },
+  "restricted": {
+    "answer": "",
+    "abstained": true,
+    "citations": [],
+    "retrieved": [],
+    "latency_ms": 1.584,
+    "mode": "lexical",
+    "answerer": "extractive"
+  },
+  "empty-collection": {
+    "answer": "",
+    "abstained": true,
+    "citations": [],
+    "retrieved": [],
+    "latency_ms": 1.618,
+    "mode": "lexical",
+    "answerer": "extractive"
+  }
+}

@@ -1,0 +1,357 @@
+{
+  "schema_version": 1,
+  "suite": "Paraphrases and exceptions / challenge v1",
+  "fingerprint": "93f2ae16bbe6c3d1d0e43a0d0777fb41dd2b8b800bb02f88c3a54880909ba379",
+  "created_at": "2026-10-05T20:44:22.876149+00:00",
+  "configuration": {
+    "top_k": 3,
+    "mode": "hybrid",
+    "answerer": "extractive"
+  },
+  "transport": "replay",
+  "case_count": 7,
+  "metrics": {
+    "abstention_accuracy": 0.7142857142857143,
+    "answer_coverage": 0.6666666666666666,
+    "citation_precision": 0.6666666666666666,
+    "collection_integrity": 1.0,
+    "mrr": 0.6666666666666666,
+    "quote_integrity": 0.6666666666666666,
+    "recall_at_k": 0.6666666666666666,
+    "success_rate": 1.0,
+    "p95_latency_ms": 10.818
+  },
+  "deltas": {},
+  "passed": false,
+  "failures": [
+    "recall_at_k: 0.6667 < 0.9000",
+    "citation_precision: 0.6667 < 0.9000",
+    "quote_integrity: 0.6667 < 1.0000",
+    "answer_coverage: 0.6667 < 0.9000",
+    "abstention_accuracy: 0.7143 < 1.0000"
+  ],
+  "cases": [
+    {
+      "id": "backup-paraphrase",
+      "question": "How frequently are copies of the database saved?",
+      "tags": [
+        "paraphrase"
+      ],
+      "metrics": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "citation_precision": 1.0,
+        "quote_integrity": 1.0,
+        "answer_coverage": 1.0,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 10.818,
+      "prediction": {
+        "answer": "Database backups run every six hours and are retained for 35 days.",
+        "abstained": false,
+        "citations": [
+          {
+            "document_id": "backups",
+            "chunk_id": "aed8da968da60c3ae84ec4d9",
+            "source": "synthetic://runbooks/backups",
+            "quote": "Database backups run every six hours and are retained for 35 days.",
+            "start": 0,
+            "end": 66
+          }
+        ],
+        "retrieved": [
+          {
+            "document_id": "backups",
+            "chunk_id": "aed8da968da60c3ae84ec4d9",
+            "text": "Database backups run every six hours and are retained for 35 days. Restore drills happen on the first Monday of each month. The recovery time objective is two hours, while the recovery point objective is six hours.",
+            "start": 0,
+            "end": 214
+          },
+          {
+            "document_id": "retention",
+            "chunk_id": "addaf9987b9edc349966e905",
+            "text": "Project working documents are retained for three years after project closure. Archived documents remain searchable until their retention deadline. Documents under a preservation hold must not be deleted until the hold is lifted.",
+            "start": 0,
+            "end": 228
+          },
+          {
+            "document_id": "releases",
+            "chunk_id": "260b9a76fdc955d74d41e931",
+            "text": "Production releases require passing unit tests and retrieval regression checks. Every release records the model revision and dataset checksum. Roll back a release when the error rate exceeds two percent for ten consecutive minutes.",
+            "start": 0,
+            "end": 231
+          }
+        ],
+        "latency_ms": 10.818
+      },
+      "error": null
+    },
+    {
+      "id": "receipt-paraphrase",
+      "question": "Can I claim a 40-dollar meal without proof of payment?",
+      "tags": [
+        "paraphrase"
+      ],
+      "metrics": {
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "citation_precision": 0.0,
+        "quote_integrity": 0.0,
+        "answer_coverage": 0.0,
+        "abstention_accuracy": 0.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 9.158,
+      "prediction": {
+        "answer": "",
+        "abstained": true,
+        "citations": [],
+        "retrieved": [
+          {
+            "document_id": "procurement",
+            "chunk_id": "a21322e401201214e9e93dd5",
+            "text": "Purchases above 5000 dollars require two independent approvals. Software subscriptions also need a security review before purchase. Approved vendors are reassessed every twelve months.",
+            "start": 0,
+            "end": 184
+          }
+        ],
+        "latency_ms": 9.158
+      },
+      "error": null
+    },
+    {
+      "id": "recovery-paraphrase",
+      "question": "How quickly should service return after data loss?",
+      "tags": [
+        "paraphrase"
+      ],
+      "metrics": {
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "citation_precision": 0.0,
+        "quote_integrity": 0.0,
+        "answer_coverage": 0.0,
+        "abstention_accuracy": 0.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 9.054,
+      "prediction": {
+        "answer": "",
+        "abstained": true,
+        "citations": [],
+        "retrieved": [
+          {
+            "document_id": "retention",
+            "chunk_id": "addaf9987b9edc349966e905",
+            "text": "Project working documents are retained for three years after project closure. Archived documents remain searchable until their retention deadline. Documents under a preservation hold must not be deleted until the hold is lifted.",
+            "start": 0,
+            "end": 228
+          },
+          {
+            "document_id": "access",
+            "chunk_id": "b3cefc37d48e8cd2318f2eef",
+            "text": "Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.",
+            "start": 0,
+            "end": 218
+          },
+          {
+            "document_id": "incidents",
+            "chunk_id": "03a3c6b33b745319115b508e",
+            "text": "For a severity-one incident, page the on-call engineer immediately. The incident commander posts an update every 20 minutes. A blameless incident review is due within five business days after resolution.",
+            "start": 0,
+            "end": 203
+          }
+        ],
+        "latency_ms": 9.054
+      },
+      "error": null
+    },
+    {
+      "id": "preservation-exception",
+      "question": "Can documents be erased while a preservation hold is active?",
+      "tags": [
+        "exception"
+      ],
+      "metrics": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "citation_precision": 1.0,
+        "quote_integrity": 1.0,
+        "answer_coverage": 1.0,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 8.992,
+      "prediction": {
+        "answer": "Documents under a preservation hold must not be deleted until the hold is lifted.",
+        "abstained": false,
+        "citations": [
+          {
+            "document_id": "retention",
+            "chunk_id": "addaf9987b9edc349966e905",
+            "source": "synthetic://handbook/retention",
+            "quote": "Documents under a preservation hold must not be deleted until the hold is lifted.",
+            "start": 147,
+            "end": 228
+          }
+        ],
+        "retrieved": [
+          {
+            "document_id": "retention",
+            "chunk_id": "addaf9987b9edc349966e905",
+            "text": "Project working documents are retained for three years after project closure. Archived documents remain searchable until their retention deadline. Documents under a preservation hold must not be deleted until the hold is lifted.",
+            "start": 0,
+            "end": 228
+          },
+          {
+            "document_id": "backups",
+            "chunk_id": "aed8da968da60c3ae84ec4d9",
+            "text": "Database backups run every six hours and are retained for 35 days. Restore drills happen on the first Monday of each month. The recovery time objective is two hours, while the recovery point objective is six hours.",
+            "start": 0,
+            "end": 214
+          },
+          {
+            "document_id": "access",
+            "chunk_id": "b3cefc37d48e8cd2318f2eef",
+            "text": "Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.",
+            "start": 0,
+            "end": 218
+          }
+        ],
+        "latency_ms": 8.992
+      },
+      "error": null
+    },
+    {
+      "id": "access-negation",
+      "question": "Do contractors have write access by default?",
+      "tags": [
+        "negation"
+      ],
+      "metrics": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "citation_precision": 1.0,
+        "quote_integrity": 1.0,
+        "answer_coverage": 1.0,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 8.803,
+      "prediction": {
+        "answer": "Contractors receive read-only access by default.",
+        "abstained": false,
+        "citations": [
+          {
+            "document_id": "access",
+            "chunk_id": "b3cefc37d48e8cd2318f2eef",
+            "source": "synthetic://handbook/access",
+            "quote": "Contractors receive read-only access by default.",
+            "start": 83,
+            "end": 131
+          }
+        ],
+        "retrieved": [
+          {
+            "document_id": "access",
+            "chunk_id": "b3cefc37d48e8cd2318f2eef",
+            "text": "Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.",
+            "start": 0,
+            "end": 218
+          }
+        ],
+        "latency_ms": 8.803
+      },
+      "error": null
+    },
+    {
+      "id": "unsupported-hotel",
+      "question": "Which hotel chain should I book?",
+      "tags": [
+        "abstention"
+      ],
+      "metrics": {
+        "recall_at_k": null,
+        "mrr": null,
+        "citation_precision": null,
+        "quote_integrity": null,
+        "answer_coverage": null,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 8.665,
+      "prediction": {
+        "answer": "",
+        "abstained": true,
+        "citations": [],
+        "retrieved": [],
+        "latency_ms": 8.665
+      },
+      "error": null
+    },
+    {
+      "id": "subscription-paraphrase",
+      "question": "Is buying a new SaaS subscription allowed before a security review?",
+      "tags": [
+        "paraphrase"
+      ],
+      "metrics": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "citation_precision": 1.0,
+        "quote_integrity": 1.0,
+        "answer_coverage": 1.0,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 8.95,
+      "prediction": {
+        "answer": "Software subscriptions also need a security review before purchase.",
+        "abstained": false,
+        "citations": [
+          {
+            "document_id": "procurement",
+            "chunk_id": "a21322e401201214e9e93dd5",
+            "source": "synthetic://handbook/procurement",
+            "quote": "Software subscriptions also need a security review before purchase.",
+            "start": 64,
+            "end": 131
+          }
+        ],
+        "retrieved": [
+          {
+            "document_id": "procurement",
+            "chunk_id": "a21322e401201214e9e93dd5",
+            "text": "Purchases above 5000 dollars require two independent approvals. Software subscriptions also need a security review before purchase. Approved vendors are reassessed every twelve months.",
+            "start": 0,
+            "end": 184
+          },
+          {
+            "document_id": "onboarding",
+            "chunk_id": "10d3d438a185f638a19a72be",
+            "text": "New employees complete security training within their first ten working days. Their manager assigns a mentor during the first week. Equipment requests go to the workplace services queue.",
+            "start": 0,
+            "end": 186
+          },
+          {
+            "document_id": "travel",
+            "chunk_id": "757fec8141bf05d253509ffc",
+            "text": "Travel reimbursements must be submitted within 30 days of the trip ending. Every expense over 25 dollars requires an itemized receipt. International travel needs approval from the department lead before booking.",
+            "start": 0,
+            "end": 211
+          }
+        ],
+        "latency_ms": 8.95
+      },
+      "error": null
+    }
+  ]
+}

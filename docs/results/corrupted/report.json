@@ -1,0 +1,698 @@
+{
+  "schema_version": 1,
+  "suite": "Synthetic workplace knowledge / v1",
+  "fingerprint": "b2fb9b6c6cc7badb8b1a395c1520274f2a2b4b9e64fe190bde1b2512a4bd6b49",
+  "created_at": "2026-10-05T20:42:22.233792+00:00",
+  "configuration": {
+    "top_k": 3,
+    "mode": "lexical",
+    "answerer": "extractive"
+  },
+  "transport": "replay",
+  "case_count": 15,
+  "metrics": {
+    "abstention_accuracy": 1.0,
+    "answer_coverage": 1.0,
+    "citation_precision": 1.0,
+    "collection_integrity": 1.0,
+    "mrr": 1.0,
+    "quote_integrity": 0.9166666666666666,
+    "recall_at_k": 1.0,
+    "success_rate": 1.0,
+    "p95_latency_ms": 13.906
+  },
+  "deltas": {},
+  "passed": false,
+  "failures": [
+    "quote_integrity: 0.9167 < 1.0000"
+  ],
+  "cases": [
+    {
+      "id": "travel-deadline",
+      "question": "When must travel reimbursements be submitted?",
+      "tags": [
+        "policy"
+      ],
+      "metrics": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "citation_precision": 1.0,
+        "quote_integrity": 0.0,
+        "answer_coverage": 1.0,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 13.906,
+      "prediction": {
+        "answer": "Travel reimbursements must be submitted within 30 days of the trip ending.",
+        "abstained": false,
+        "citations": [
+          {
+            "document_id": "travel",
+            "chunk_id": "f3d1301128f8902797eabd79",
+            "source": "synthetic://handbook/travel",
+            "quote": "Invented evidence that was never in the source.",
+            "start": 0,
+            "end": 74
+          }
+        ],
+        "retrieved": [
+          {
+            "document_id": "travel",
+            "chunk_id": "f3d1301128f8902797eabd79",
+            "text": "Travel reimbursements must be submitted within 30 days of the trip ending. Every expense over 25 dollars requires an itemized receipt. International travel needs approval from the department lead before booking.",
+            "start": 0,
+            "end": 211
+          },
+          {
+            "document_id": "retention",
+            "chunk_id": "04eaf1a494b9d54128d350a5",
+            "text": "Project working documents are retained for three years after project closure. Archived documents remain searchable until their retention deadline. Documents under a preservation hold must not be deleted until the hold is lifted.",
+            "start": 0,
+            "end": 228
+          }
+        ],
+        "latency_ms": 13.906
+      },
+      "error": null
+    },
+    {
+      "id": "receipt",
+      "question": "Which expense requires an itemized receipt?",
+      "tags": [
+        "policy"
+      ],
+      "metrics": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "citation_precision": 1.0,
+        "quote_integrity": 1.0,
+        "answer_coverage": 1.0,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 2.037,
+      "prediction": {
+        "answer": "Every expense over 25 dollars requires an itemized receipt.",
+        "abstained": false,
+        "citations": [
+          {
+            "document_id": "travel",
+            "chunk_id": "f3d1301128f8902797eabd79",
+            "source": "synthetic://handbook/travel",
+            "quote": "Every expense over 25 dollars requires an itemized receipt.",
+            "start": 75,
+            "end": 134
+          }
+        ],
+        "retrieved": [
+          {
+            "document_id": "travel",
+            "chunk_id": "f3d1301128f8902797eabd79",
+            "text": "Travel reimbursements must be submitted within 30 days of the trip ending. Every expense over 25 dollars requires an itemized receipt. International travel needs approval from the department lead before booking.",
+            "start": 0,
+            "end": 211
+          }
+        ],
+        "latency_ms": 2.037
+      },
+      "error": null
+    },
+    {
+      "id": "access-expiry",
+      "question": "When do access requests expire?",
+      "tags": [
+        "policy",
+        "isolation"
+      ],
+      "metrics": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "citation_precision": 1.0,
+        "quote_integrity": 1.0,
+        "answer_coverage": 1.0,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 1.917,
+      "prediction": {
+        "answer": "Access requests require approval from the resource owner and expire after 90 days.",
+        "abstained": false,
+        "citations": [
+          {
+            "document_id": "access",
+            "chunk_id": "a50c99907c9f69ac4b89cbc7",
+            "source": "synthetic://handbook/access",
+            "quote": "Access requests require approval from the resource owner and expire after 90 days.",
+            "start": 0,
+            "end": 82
+          }
+        ],
+        "retrieved": [
+          {
+            "document_id": "access",
+            "chunk_id": "a50c99907c9f69ac4b89cbc7",
+            "text": "Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.",
+            "start": 0,
+            "end": 218
+          },
+          {
+            "document_id": "onboarding",
+            "chunk_id": "95492ba0afbc9abfb452ec62",
+            "text": "New employees complete security training within their first ten working days. Their manager assigns a mentor during the first week. Equipment requests go to the workplace services queue.",
+            "start": 0,
+            "end": 186
+          }
+        ],
+        "latency_ms": 1.917
+      },
+      "error": null
+    },
+    {
+      "id": "contractors",
+      "question": "What access do contractors receive?",
+      "tags": [
+        "policy"
+      ],
+      "metrics": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "citation_precision": 1.0,
+        "quote_integrity": 1.0,
+        "answer_coverage": 1.0,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 1.751,
+      "prediction": {
+        "answer": "Contractors receive read-only access by default.",
+        "abstained": false,
+        "citations": [
+          {
+            "document_id": "access",
+            "chunk_id": "a50c99907c9f69ac4b89cbc7",
+            "source": "synthetic://handbook/access",
+            "quote": "Contractors receive read-only access by default.",
+            "start": 83,
+            "end": 131
+          }
+        ],
+        "retrieved": [
+          {
+            "document_id": "access",
+            "chunk_id": "a50c99907c9f69ac4b89cbc7",
+            "text": "Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.",
+            "start": 0,
+            "end": 218
+          }
+        ],
+        "latency_ms": 1.751
+      },
+      "error": null
+    },
+    {
+      "id": "backup-frequency",
+      "question": "How often do database backups run?",
+      "tags": [
+        "operations"
+      ],
+      "metrics": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "citation_precision": 1.0,
+        "quote_integrity": 1.0,
+        "answer_coverage": 1.0,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 1.688,
+      "prediction": {
+        "answer": "Database backups run every six hours and are retained for 35 days.",
+        "abstained": false,
+        "citations": [
+          {
+            "document_id": "backups",
+            "chunk_id": "5f75ae354ee500ec9cc891e2",
+            "source": "synthetic://runbooks/backups",
+            "quote": "Database backups run every six hours and are retained for 35 days.",
+            "start": 0,
+            "end": 66
+          }
+        ],
+        "retrieved": [
+          {
+            "document_id": "backups",
+            "chunk_id": "5f75ae354ee500ec9cc891e2",
+            "text": "Database backups run every six hours and are retained for 35 days. Restore drills happen on the first Monday of each month. The recovery time objective is two hours, while the recovery point objective is six hours.",
+            "start": 0,
+            "end": 214
+          }
+        ],
+        "latency_ms": 1.688
+      },
+      "error": null
+    },
+    {
+      "id": "restore-drill",
+      "question": "When do restore drills happen?",
+      "tags": [
+        "operations"
+      ],
+      "metrics": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "citation_precision": 1.0,
+        "quote_integrity": 1.0,
+        "answer_coverage": 1.0,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 1.73,
+      "prediction": {
+        "answer": "Restore drills happen on the first Monday of each month.",
+        "abstained": false,
+        "citations": [
+          {
+            "document_id": "backups",
+            "chunk_id": "5f75ae354ee500ec9cc891e2",
+            "source": "synthetic://runbooks/backups",
+            "quote": "Restore drills happen on the first Monday of each month.",
+            "start": 67,
+            "end": 123
+          }
+        ],
+        "retrieved": [
+          {
+            "document_id": "backups",
+            "chunk_id": "5f75ae354ee500ec9cc891e2",
+            "text": "Database backups run every six hours and are retained for 35 days. Restore drills happen on the first Monday of each month. The recovery time objective is two hours, while the recovery point objective is six hours.",
+            "start": 0,
+            "end": 214
+          }
+        ],
+        "latency_ms": 1.73
+      },
+      "error": null
+    },
+    {
+      "id": "incident-updates",
+      "question": "How often does the incident commander post an update?",
+      "tags": [
+        "operations"
+      ],
+      "metrics": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "citation_precision": 1.0,
+        "quote_integrity": 1.0,
+        "answer_coverage": 1.0,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 1.776,
+      "prediction": {
+        "answer": "The incident commander posts an update every 20 minutes.",
+        "abstained": false,
+        "citations": [
+          {
+            "document_id": "incidents",
+            "chunk_id": "ef9bc7e6b64aa65a0a45b8c0",
+            "source": "synthetic://runbooks/incidents",
+            "quote": "The incident commander posts an update every 20 minutes.",
+            "start": 68,
+            "end": 124
+          }
+        ],
+        "retrieved": [
+          {
+            "document_id": "incidents",
+            "chunk_id": "ef9bc7e6b64aa65a0a45b8c0",
+            "text": "For a severity-one incident, page the on-call engineer immediately. The incident commander posts an update every 20 minutes. A blameless incident review is due within five business days after resolution.",
+            "start": 0,
+            "end": 203
+          }
+        ],
+        "latency_ms": 1.776
+      },
+      "error": null
+    },
+    {
+      "id": "release-checks",
+      "question": "What do production releases require?",
+      "tags": [
+        "engineering"
+      ],
+      "metrics": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "citation_precision": 1.0,
+        "quote_integrity": 1.0,
+        "answer_coverage": 1.0,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 1.769,
+      "prediction": {
+        "answer": "Production releases require passing unit tests and retrieval regression checks.",
+        "abstained": false,
+        "citations": [
+          {
+            "document_id": "releases",
+            "chunk_id": "0dc5bc2bd5497d4212d8ebe6",
+            "source": "synthetic://engineering/releases",
+            "quote": "Production releases require passing unit tests and retrieval regression checks.",
+            "start": 0,
+            "end": 79
+          }
+        ],
+        "retrieved": [
+          {
+            "document_id": "releases",
+            "chunk_id": "0dc5bc2bd5497d4212d8ebe6",
+            "text": "Production releases require passing unit tests and retrieval regression checks. Every release records the model revision and dataset checksum. Roll back a release when the error rate exceeds two percent for ten consecutive minutes.",
+            "start": 0,
+            "end": 231
+          },
+          {
+            "document_id": "procurement",
+            "chunk_id": "e07a9e28e1d3a8ca33844961",
+            "text": "Purchases above 5000 dollars require two independent approvals. Software subscriptions also need a security review before purchase. Approved vendors are reassessed every twelve months.",
+            "start": 0,
+            "end": 184
+          },
+          {
+            "document_id": "access",
+            "chunk_id": "a50c99907c9f69ac4b89cbc7",
+            "text": "Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.",
+            "start": 0,
+            "end": 218
+          }
+        ],
+        "latency_ms": 1.769
+      },
+      "error": null
+    },
+    {
+      "id": "retention",
+      "question": "How long are project working documents retained?",
+      "tags": [
+        "policy"
+      ],
+      "metrics": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "citation_precision": 1.0,
+        "quote_integrity": 1.0,
+        "answer_coverage": 1.0,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 1.814,
+      "prediction": {
+        "answer": "Project working documents are retained for three years after project closure.",
+        "abstained": false,
+        "citations": [
+          {
+            "document_id": "retention",
+            "chunk_id": "04eaf1a494b9d54128d350a5",
+            "source": "synthetic://handbook/retention",
+            "quote": "Project working documents are retained for three years after project closure.",
+            "start": 0,
+            "end": 77
+          }
+        ],
+        "retrieved": [
+          {
+            "document_id": "retention",
+            "chunk_id": "04eaf1a494b9d54128d350a5",
+            "text": "Project working documents are retained for three years after project closure. Archived documents remain searchable until their retention deadline. Documents under a preservation hold must not be deleted until the hold is lifted.",
+            "start": 0,
+            "end": 228
+          },
+          {
+            "document_id": "backups",
+            "chunk_id": "5f75ae354ee500ec9cc891e2",
+            "text": "Database backups run every six hours and are retained for 35 days. Restore drills happen on the first Monday of each month. The recovery time objective is two hours, while the recovery point objective is six hours.",
+            "start": 0,
+            "end": 214
+          },
+          {
+            "document_id": "onboarding",
+            "chunk_id": "95492ba0afbc9abfb452ec62",
+            "text": "New employees complete security training within their first ten working days. Their manager assigns a mentor during the first week. Equipment requests go to the workplace services queue.",
+            "start": 0,
+            "end": 186
+          }
+        ],
+        "latency_ms": 1.814
+      },
+      "error": null
+    },
+    {
+      "id": "training",
+      "question": "When do new employees complete security training?",
+      "tags": [
+        "onboarding"
+      ],
+      "metrics": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "citation_precision": 1.0,
+        "quote_integrity": 1.0,
+        "answer_coverage": 1.0,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 1.727,
+      "prediction": {
+        "answer": "New employees complete security training within their first ten working days.",
+        "abstained": false,
+        "citations": [
+          {
+            "document_id": "onboarding",
+            "chunk_id": "95492ba0afbc9abfb452ec62",
+            "source": "synthetic://handbook/onboarding",
+            "quote": "New employees complete security training within their first ten working days.",
+            "start": 0,
+            "end": 77
+          }
+        ],
+        "retrieved": [
+          {
+            "document_id": "onboarding",
+            "chunk_id": "95492ba0afbc9abfb452ec62",
+            "text": "New employees complete security training within their first ten working days. Their manager assigns a mentor during the first week. Equipment requests go to the workplace services queue.",
+            "start": 0,
+            "end": 186
+          },
+          {
+            "document_id": "procurement",
+            "chunk_id": "e07a9e28e1d3a8ca33844961",
+            "text": "Purchases above 5000 dollars require two independent approvals. Software subscriptions also need a security review before purchase. Approved vendors are reassessed every twelve months.",
+            "start": 0,
+            "end": 184
+          },
+          {
+            "document_id": "access",
+            "chunk_id": "a50c99907c9f69ac4b89cbc7",
+            "text": "Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.",
+            "start": 0,
+            "end": 218
+          }
+        ],
+        "latency_ms": 1.727
+      },
+      "error": null
+    },
+    {
+      "id": "purchases",
+      "question": "Which purchases require two independent approvals?",
+      "tags": [
+        "policy"
+      ],
+      "metrics": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "citation_precision": 1.0,
+        "quote_integrity": 1.0,
+        "answer_coverage": 1.0,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 1.876,
+      "prediction": {
+        "answer": "Purchases above 5000 dollars require two independent approvals.",
+        "abstained": false,
+        "citations": [
+          {
+            "document_id": "procurement",
+            "chunk_id": "e07a9e28e1d3a8ca33844961",
+            "source": "synthetic://handbook/procurement",
+            "quote": "Purchases above 5000 dollars require two independent approvals.",
+            "start": 0,
+            "end": 63
+          }
+        ],
+        "retrieved": [
+          {
+            "document_id": "procurement",
+            "chunk_id": "e07a9e28e1d3a8ca33844961",
+            "text": "Purchases above 5000 dollars require two independent approvals. Software subscriptions also need a security review before purchase. Approved vendors are reassessed every twelve months.",
+            "start": 0,
+            "end": 184
+          },
+          {
+            "document_id": "releases",
+            "chunk_id": "0dc5bc2bd5497d4212d8ebe6",
+            "text": "Production releases require passing unit tests and retrieval regression checks. Every release records the model revision and dataset checksum. Roll back a release when the error rate exceeds two percent for ten consecutive minutes.",
+            "start": 0,
+            "end": 231
+          },
+          {
+            "document_id": "access",
+            "chunk_id": "a50c99907c9f69ac4b89cbc7",
+            "text": "Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.",
+            "start": 0,
+            "end": 218
+          }
+        ],
+        "latency_ms": 1.876
+      },
+      "error": null
+    },
+    {
+      "id": "other-organization",
+      "question": "When do access requests expire?",
+      "tags": [
+        "isolation"
+      ],
+      "metrics": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "citation_precision": 1.0,
+        "quote_integrity": 1.0,
+        "answer_coverage": 1.0,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 1.661,
+      "prediction": {
+        "answer": "Access requests in this separate organization expire after seven days.",
+        "abstained": false,
+        "citations": [
+          {
+            "document_id": "access",
+            "chunk_id": "2e8ec814bd8952b6ecbdd56b",
+            "source": "synthetic://other/access",
+            "quote": "Access requests in this separate organization expire after seven days.",
+            "start": 0,
+            "end": 70
+          }
+        ],
+        "retrieved": [
+          {
+            "document_id": "access",
+            "chunk_id": "2e8ec814bd8952b6ecbdd56b",
+            "text": "Access requests in this separate organization expire after seven days. This contradicting policy tests collection isolation and duplicate document IDs.",
+            "start": 0,
+            "end": 151
+          }
+        ],
+        "latency_ms": 1.661
+      },
+      "error": null
+    },
+    {
+      "id": "unknown",
+      "question": "What is the unicorn breeding schedule?",
+      "tags": [
+        "abstention"
+      ],
+      "metrics": {
+        "recall_at_k": null,
+        "mrr": null,
+        "citation_precision": null,
+        "quote_integrity": null,
+        "answer_coverage": null,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 1.57,
+      "prediction": {
+        "answer": "",
+        "abstained": true,
+        "citations": [],
+        "retrieved": [],
+        "latency_ms": 1.57
+      },
+      "error": null
+    },
+    {
+      "id": "restricted",
+      "question": "What is the executive salary?",
+      "tags": [
+        "abstention",
+        "isolation"
+      ],
+      "metrics": {
+        "recall_at_k": null,
+        "mrr": null,
+        "citation_precision": null,
+        "quote_integrity": null,
+        "answer_coverage": null,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 1.584,
+      "prediction": {
+        "answer": "",
+        "abstained": true,
+        "citations": [],
+        "retrieved": [],
+        "latency_ms": 1.584
+      },
+      "error": null
+    },
+    {
+      "id": "empty-collection",
+      "question": "When do access requests expire?",
+      "tags": [
+        "abstention",
+        "isolation"
+      ],
+      "metrics": {
+        "recall_at_k": null,
+        "mrr": null,
+        "citation_precision": null,
+        "quote_integrity": null,
+        "answer_coverage": null,
+        "abstention_accuracy": 1.0,
+        "collection_integrity": 1.0,
+        "success_rate": 1.0
+      },
+      "latency_ms": 1.618,
+      "prediction": {
+        "answer": "",
+        "abstained": true,
+        "citations": [],
+        "retrieved": [],
+        "latency_ms": 1.618
+      },
+      "error": null
+    }
+  ]
+}

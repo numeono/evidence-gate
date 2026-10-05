@@ -1,0 +1,34 @@
+name: checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.11', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '${{ matrix.python }}'
+      - run: pip install -e '.[dev]'
+      - run: ruff check src tests scripts
+      - run: pytest -q
+      - name: Replay saved evaluation
+        run: evidence-gate --suite examples/suite.json --corpus examples/documents.jsonl --predictions examples/predictions.json --output local-results/replay
+      - name: Verify corrupted evidence fails the gate
+        run: |
+          python scripts/corrupt_predictions.py
+          set +e
+          evidence-gate --suite examples/suite.json --corpus examples/documents.jsonl --predictions local-results/corrupted.json --output local-results/corrupted
+          status=$?
+          set -e
+          test "$status" -eq 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evaluation-${{ matrix.python }}
+          path: local-results/
+

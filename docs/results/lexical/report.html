@@ -1,0 +1,663 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evidence Gate: Synthetic workplace knowledge / v1</title>
+<style>body{max-width:960px;margin:48px auto;padding:0 24px;font:16px/1.6 system-ui;color:#152d36}
+h1{font-size:32px}table{border-collapse:collapse;width:100%}th,td{padding:8px 12px;border-bottom:1px solid #d4dce0;text-align:left}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f3f6f7;padding:16px;font-size:13px}
+details{margin:16px 0}summary{cursor:pointer}small{color:#52636d}</style>
+<h1>Evidence Gate / PASS</h1><p>Synthetic workplace knowledge / v1 · 15 cases · replay</p>
+<small>Fixture fingerprint: b2fb9b6c6cc7badb8b1a395c1520274f2a2b4b9e64fe190bde1b2512a4bd6b49<br>2026-10-05T20:41:53.445587+00:00</small>
+<h2>Metrics</h2><table><tr><th>abstention_accuracy</th><td>1.0000</td></tr><tr><th>answer_coverage</th><td>1.0000</td></tr><tr><th>citation_precision</th><td>1.0000</td></tr><tr><th>collection_integrity</th><td>1.0000</td></tr><tr><th>mrr</th><td>1.0000</td></tr><tr><th>quote_integrity</th><td>1.0000</td></tr><tr><th>recall_at_k</th><td>1.0000</td></tr><tr><th>success_rate</th><td>1.0000</td></tr><tr><th>p95_latency_ms</th><td>13.9060</td></tr></table><ul></ul><h2>Case details</h2><details><summary>travel-deadline — When must travel reimbursements be submitted?</summary><pre>{
+  &quot;id&quot;: &quot;travel-deadline&quot;,
+  &quot;question&quot;: &quot;When must travel reimbursements be submitted?&quot;,
+  &quot;tags&quot;: [
+    &quot;policy&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 1.0,
+    &quot;mrr&quot;: 1.0,
+    &quot;citation_precision&quot;: 1.0,
+    &quot;quote_integrity&quot;: 1.0,
+    &quot;answer_coverage&quot;: 1.0,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 13.906,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;Travel reimbursements must be submitted within 30 days of the trip ending.&quot;,
+    &quot;abstained&quot;: false,
+    &quot;citations&quot;: [
+      {
+        &quot;document_id&quot;: &quot;travel&quot;,
+        &quot;chunk_id&quot;: &quot;f3d1301128f8902797eabd79&quot;,
+        &quot;source&quot;: &quot;synthetic://handbook/travel&quot;,
+        &quot;quote&quot;: &quot;Travel reimbursements must be submitted within 30 days of the trip ending.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 74
+      }
+    ],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;travel&quot;,
+        &quot;chunk_id&quot;: &quot;f3d1301128f8902797eabd79&quot;,
+        &quot;text&quot;: &quot;Travel reimbursements must be submitted within 30 days of the trip ending. Every expense over 25 dollars requires an itemized receipt. International travel needs approval from the department lead before booking.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 211
+      },
+      {
+        &quot;document_id&quot;: &quot;retention&quot;,
+        &quot;chunk_id&quot;: &quot;04eaf1a494b9d54128d350a5&quot;,
+        &quot;text&quot;: &quot;Project working documents are retained for three years after project closure. Archived documents remain searchable until their retention deadline. Documents under a preservation hold must not be deleted until the hold is lifted.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 228
+      }
+    ],
+    &quot;latency_ms&quot;: 13.906
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>receipt — Which expense requires an itemized receipt?</summary><pre>{
+  &quot;id&quot;: &quot;receipt&quot;,
+  &quot;question&quot;: &quot;Which expense requires an itemized receipt?&quot;,
+  &quot;tags&quot;: [
+    &quot;policy&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 1.0,
+    &quot;mrr&quot;: 1.0,
+    &quot;citation_precision&quot;: 1.0,
+    &quot;quote_integrity&quot;: 1.0,
+    &quot;answer_coverage&quot;: 1.0,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 2.037,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;Every expense over 25 dollars requires an itemized receipt.&quot;,
+    &quot;abstained&quot;: false,
+    &quot;citations&quot;: [
+      {
+        &quot;document_id&quot;: &quot;travel&quot;,
+        &quot;chunk_id&quot;: &quot;f3d1301128f8902797eabd79&quot;,
+        &quot;source&quot;: &quot;synthetic://handbook/travel&quot;,
+        &quot;quote&quot;: &quot;Every expense over 25 dollars requires an itemized receipt.&quot;,
+        &quot;start&quot;: 75,
+        &quot;end&quot;: 134
+      }
+    ],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;travel&quot;,
+        &quot;chunk_id&quot;: &quot;f3d1301128f8902797eabd79&quot;,
+        &quot;text&quot;: &quot;Travel reimbursements must be submitted within 30 days of the trip ending. Every expense over 25 dollars requires an itemized receipt. International travel needs approval from the department lead before booking.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 211
+      }
+    ],
+    &quot;latency_ms&quot;: 2.037
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>access-expiry — When do access requests expire?</summary><pre>{
+  &quot;id&quot;: &quot;access-expiry&quot;,
+  &quot;question&quot;: &quot;When do access requests expire?&quot;,
+  &quot;tags&quot;: [
+    &quot;policy&quot;,
+    &quot;isolation&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 1.0,
+    &quot;mrr&quot;: 1.0,
+    &quot;citation_precision&quot;: 1.0,
+    &quot;quote_integrity&quot;: 1.0,
+    &quot;answer_coverage&quot;: 1.0,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.917,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;Access requests require approval from the resource owner and expire after 90 days.&quot;,
+    &quot;abstained&quot;: false,
+    &quot;citations&quot;: [
+      {
+        &quot;document_id&quot;: &quot;access&quot;,
+        &quot;chunk_id&quot;: &quot;a50c99907c9f69ac4b89cbc7&quot;,
+        &quot;source&quot;: &quot;synthetic://handbook/access&quot;,
+        &quot;quote&quot;: &quot;Access requests require approval from the resource owner and expire after 90 days.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 82
+      }
+    ],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;access&quot;,
+        &quot;chunk_id&quot;: &quot;a50c99907c9f69ac4b89cbc7&quot;,
+        &quot;text&quot;: &quot;Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 218
+      },
+      {
+        &quot;document_id&quot;: &quot;onboarding&quot;,
+        &quot;chunk_id&quot;: &quot;95492ba0afbc9abfb452ec62&quot;,
+        &quot;text&quot;: &quot;New employees complete security training within their first ten working days. Their manager assigns a mentor during the first week. Equipment requests go to the workplace services queue.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 186
+      }
+    ],
+    &quot;latency_ms&quot;: 1.917
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>contractors — What access do contractors receive?</summary><pre>{
+  &quot;id&quot;: &quot;contractors&quot;,
+  &quot;question&quot;: &quot;What access do contractors receive?&quot;,
+  &quot;tags&quot;: [
+    &quot;policy&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 1.0,
+    &quot;mrr&quot;: 1.0,
+    &quot;citation_precision&quot;: 1.0,
+    &quot;quote_integrity&quot;: 1.0,
+    &quot;answer_coverage&quot;: 1.0,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.751,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;Contractors receive read-only access by default.&quot;,
+    &quot;abstained&quot;: false,
+    &quot;citations&quot;: [
+      {
+        &quot;document_id&quot;: &quot;access&quot;,
+        &quot;chunk_id&quot;: &quot;a50c99907c9f69ac4b89cbc7&quot;,
+        &quot;source&quot;: &quot;synthetic://handbook/access&quot;,
+        &quot;quote&quot;: &quot;Contractors receive read-only access by default.&quot;,
+        &quot;start&quot;: 83,
+        &quot;end&quot;: 131
+      }
+    ],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;access&quot;,
+        &quot;chunk_id&quot;: &quot;a50c99907c9f69ac4b89cbc7&quot;,
+        &quot;text&quot;: &quot;Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 218
+      }
+    ],
+    &quot;latency_ms&quot;: 1.751
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>backup-frequency — How often do database backups run?</summary><pre>{
+  &quot;id&quot;: &quot;backup-frequency&quot;,
+  &quot;question&quot;: &quot;How often do database backups run?&quot;,
+  &quot;tags&quot;: [
+    &quot;operations&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 1.0,
+    &quot;mrr&quot;: 1.0,
+    &quot;citation_precision&quot;: 1.0,
+    &quot;quote_integrity&quot;: 1.0,
+    &quot;answer_coverage&quot;: 1.0,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.688,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;Database backups run every six hours and are retained for 35 days.&quot;,
+    &quot;abstained&quot;: false,
+    &quot;citations&quot;: [
+      {
+        &quot;document_id&quot;: &quot;backups&quot;,
+        &quot;chunk_id&quot;: &quot;5f75ae354ee500ec9cc891e2&quot;,
+        &quot;source&quot;: &quot;synthetic://runbooks/backups&quot;,
+        &quot;quote&quot;: &quot;Database backups run every six hours and are retained for 35 days.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 66
+      }
+    ],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;backups&quot;,
+        &quot;chunk_id&quot;: &quot;5f75ae354ee500ec9cc891e2&quot;,
+        &quot;text&quot;: &quot;Database backups run every six hours and are retained for 35 days. Restore drills happen on the first Monday of each month. The recovery time objective is two hours, while the recovery point objective is six hours.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 214
+      }
+    ],
+    &quot;latency_ms&quot;: 1.688
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>restore-drill — When do restore drills happen?</summary><pre>{
+  &quot;id&quot;: &quot;restore-drill&quot;,
+  &quot;question&quot;: &quot;When do restore drills happen?&quot;,
+  &quot;tags&quot;: [
+    &quot;operations&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 1.0,
+    &quot;mrr&quot;: 1.0,
+    &quot;citation_precision&quot;: 1.0,
+    &quot;quote_integrity&quot;: 1.0,
+    &quot;answer_coverage&quot;: 1.0,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.73,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;Restore drills happen on the first Monday of each month.&quot;,
+    &quot;abstained&quot;: false,
+    &quot;citations&quot;: [
+      {
+        &quot;document_id&quot;: &quot;backups&quot;,
+        &quot;chunk_id&quot;: &quot;5f75ae354ee500ec9cc891e2&quot;,
+        &quot;source&quot;: &quot;synthetic://runbooks/backups&quot;,
+        &quot;quote&quot;: &quot;Restore drills happen on the first Monday of each month.&quot;,
+        &quot;start&quot;: 67,
+        &quot;end&quot;: 123
+      }
+    ],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;backups&quot;,
+        &quot;chunk_id&quot;: &quot;5f75ae354ee500ec9cc891e2&quot;,
+        &quot;text&quot;: &quot;Database backups run every six hours and are retained for 35 days. Restore drills happen on the first Monday of each month. The recovery time objective is two hours, while the recovery point objective is six hours.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 214
+      }
+    ],
+    &quot;latency_ms&quot;: 1.73
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>incident-updates — How often does the incident commander post an update?</summary><pre>{
+  &quot;id&quot;: &quot;incident-updates&quot;,
+  &quot;question&quot;: &quot;How often does the incident commander post an update?&quot;,
+  &quot;tags&quot;: [
+    &quot;operations&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 1.0,
+    &quot;mrr&quot;: 1.0,
+    &quot;citation_precision&quot;: 1.0,
+    &quot;quote_integrity&quot;: 1.0,
+    &quot;answer_coverage&quot;: 1.0,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.776,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;The incident commander posts an update every 20 minutes.&quot;,
+    &quot;abstained&quot;: false,
+    &quot;citations&quot;: [
+      {
+        &quot;document_id&quot;: &quot;incidents&quot;,
+        &quot;chunk_id&quot;: &quot;ef9bc7e6b64aa65a0a45b8c0&quot;,
+        &quot;source&quot;: &quot;synthetic://runbooks/incidents&quot;,
+        &quot;quote&quot;: &quot;The incident commander posts an update every 20 minutes.&quot;,
+        &quot;start&quot;: 68,
+        &quot;end&quot;: 124
+      }
+    ],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;incidents&quot;,
+        &quot;chunk_id&quot;: &quot;ef9bc7e6b64aa65a0a45b8c0&quot;,
+        &quot;text&quot;: &quot;For a severity-one incident, page the on-call engineer immediately. The incident commander posts an update every 20 minutes. A blameless incident review is due within five business days after resolution.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 203
+      }
+    ],
+    &quot;latency_ms&quot;: 1.776
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>release-checks — What do production releases require?</summary><pre>{
+  &quot;id&quot;: &quot;release-checks&quot;,
+  &quot;question&quot;: &quot;What do production releases require?&quot;,
+  &quot;tags&quot;: [
+    &quot;engineering&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 1.0,
+    &quot;mrr&quot;: 1.0,
+    &quot;citation_precision&quot;: 1.0,
+    &quot;quote_integrity&quot;: 1.0,
+    &quot;answer_coverage&quot;: 1.0,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.769,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;Production releases require passing unit tests and retrieval regression checks.&quot;,
+    &quot;abstained&quot;: false,
+    &quot;citations&quot;: [
+      {
+        &quot;document_id&quot;: &quot;releases&quot;,
+        &quot;chunk_id&quot;: &quot;0dc5bc2bd5497d4212d8ebe6&quot;,
+        &quot;source&quot;: &quot;synthetic://engineering/releases&quot;,
+        &quot;quote&quot;: &quot;Production releases require passing unit tests and retrieval regression checks.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 79
+      }
+    ],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;releases&quot;,
+        &quot;chunk_id&quot;: &quot;0dc5bc2bd5497d4212d8ebe6&quot;,
+        &quot;text&quot;: &quot;Production releases require passing unit tests and retrieval regression checks. Every release records the model revision and dataset checksum. Roll back a release when the error rate exceeds two percent for ten consecutive minutes.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 231
+      },
+      {
+        &quot;document_id&quot;: &quot;procurement&quot;,
+        &quot;chunk_id&quot;: &quot;e07a9e28e1d3a8ca33844961&quot;,
+        &quot;text&quot;: &quot;Purchases above 5000 dollars require two independent approvals. Software subscriptions also need a security review before purchase. Approved vendors are reassessed every twelve months.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 184
+      },
+      {
+        &quot;document_id&quot;: &quot;access&quot;,
+        &quot;chunk_id&quot;: &quot;a50c99907c9f69ac4b89cbc7&quot;,
+        &quot;text&quot;: &quot;Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 218
+      }
+    ],
+    &quot;latency_ms&quot;: 1.769
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>retention — How long are project working documents retained?</summary><pre>{
+  &quot;id&quot;: &quot;retention&quot;,
+  &quot;question&quot;: &quot;How long are project working documents retained?&quot;,
+  &quot;tags&quot;: [
+    &quot;policy&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 1.0,
+    &quot;mrr&quot;: 1.0,
+    &quot;citation_precision&quot;: 1.0,
+    &quot;quote_integrity&quot;: 1.0,
+    &quot;answer_coverage&quot;: 1.0,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.814,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;Project working documents are retained for three years after project closure.&quot;,
+    &quot;abstained&quot;: false,
+    &quot;citations&quot;: [
+      {
+        &quot;document_id&quot;: &quot;retention&quot;,
+        &quot;chunk_id&quot;: &quot;04eaf1a494b9d54128d350a5&quot;,
+        &quot;source&quot;: &quot;synthetic://handbook/retention&quot;,
+        &quot;quote&quot;: &quot;Project working documents are retained for three years after project closure.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 77
+      }
+    ],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;retention&quot;,
+        &quot;chunk_id&quot;: &quot;04eaf1a494b9d54128d350a5&quot;,
+        &quot;text&quot;: &quot;Project working documents are retained for three years after project closure. Archived documents remain searchable until their retention deadline. Documents under a preservation hold must not be deleted until the hold is lifted.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 228
+      },
+      {
+        &quot;document_id&quot;: &quot;backups&quot;,
+        &quot;chunk_id&quot;: &quot;5f75ae354ee500ec9cc891e2&quot;,
+        &quot;text&quot;: &quot;Database backups run every six hours and are retained for 35 days. Restore drills happen on the first Monday of each month. The recovery time objective is two hours, while the recovery point objective is six hours.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 214
+      },
+      {
+        &quot;document_id&quot;: &quot;onboarding&quot;,
+        &quot;chunk_id&quot;: &quot;95492ba0afbc9abfb452ec62&quot;,
+        &quot;text&quot;: &quot;New employees complete security training within their first ten working days. Their manager assigns a mentor during the first week. Equipment requests go to the workplace services queue.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 186
+      }
+    ],
+    &quot;latency_ms&quot;: 1.814
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>training — When do new employees complete security training?</summary><pre>{
+  &quot;id&quot;: &quot;training&quot;,
+  &quot;question&quot;: &quot;When do new employees complete security training?&quot;,
+  &quot;tags&quot;: [
+    &quot;onboarding&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 1.0,
+    &quot;mrr&quot;: 1.0,
+    &quot;citation_precision&quot;: 1.0,
+    &quot;quote_integrity&quot;: 1.0,
+    &quot;answer_coverage&quot;: 1.0,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.727,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;New employees complete security training within their first ten working days.&quot;,
+    &quot;abstained&quot;: false,
+    &quot;citations&quot;: [
+      {
+        &quot;document_id&quot;: &quot;onboarding&quot;,
+        &quot;chunk_id&quot;: &quot;95492ba0afbc9abfb452ec62&quot;,
+        &quot;source&quot;: &quot;synthetic://handbook/onboarding&quot;,
+        &quot;quote&quot;: &quot;New employees complete security training within their first ten working days.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 77
+      }
+    ],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;onboarding&quot;,
+        &quot;chunk_id&quot;: &quot;95492ba0afbc9abfb452ec62&quot;,
+        &quot;text&quot;: &quot;New employees complete security training within their first ten working days. Their manager assigns a mentor during the first week. Equipment requests go to the workplace services queue.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 186
+      },
+      {
+        &quot;document_id&quot;: &quot;procurement&quot;,
+        &quot;chunk_id&quot;: &quot;e07a9e28e1d3a8ca33844961&quot;,
+        &quot;text&quot;: &quot;Purchases above 5000 dollars require two independent approvals. Software subscriptions also need a security review before purchase. Approved vendors are reassessed every twelve months.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 184
+      },
+      {
+        &quot;document_id&quot;: &quot;access&quot;,
+        &quot;chunk_id&quot;: &quot;a50c99907c9f69ac4b89cbc7&quot;,
+        &quot;text&quot;: &quot;Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 218
+      }
+    ],
+    &quot;latency_ms&quot;: 1.727
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>purchases — Which purchases require two independent approvals?</summary><pre>{
+  &quot;id&quot;: &quot;purchases&quot;,
+  &quot;question&quot;: &quot;Which purchases require two independent approvals?&quot;,
+  &quot;tags&quot;: [
+    &quot;policy&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 1.0,
+    &quot;mrr&quot;: 1.0,
+    &quot;citation_precision&quot;: 1.0,
+    &quot;quote_integrity&quot;: 1.0,
+    &quot;answer_coverage&quot;: 1.0,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.876,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;Purchases above 5000 dollars require two independent approvals.&quot;,
+    &quot;abstained&quot;: false,
+    &quot;citations&quot;: [
+      {
+        &quot;document_id&quot;: &quot;procurement&quot;,
+        &quot;chunk_id&quot;: &quot;e07a9e28e1d3a8ca33844961&quot;,
+        &quot;source&quot;: &quot;synthetic://handbook/procurement&quot;,
+        &quot;quote&quot;: &quot;Purchases above 5000 dollars require two independent approvals.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 63
+      }
+    ],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;procurement&quot;,
+        &quot;chunk_id&quot;: &quot;e07a9e28e1d3a8ca33844961&quot;,
+        &quot;text&quot;: &quot;Purchases above 5000 dollars require two independent approvals. Software subscriptions also need a security review before purchase. Approved vendors are reassessed every twelve months.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 184
+      },
+      {
+        &quot;document_id&quot;: &quot;releases&quot;,
+        &quot;chunk_id&quot;: &quot;0dc5bc2bd5497d4212d8ebe6&quot;,
+        &quot;text&quot;: &quot;Production releases require passing unit tests and retrieval regression checks. Every release records the model revision and dataset checksum. Roll back a release when the error rate exceeds two percent for ten consecutive minutes.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 231
+      },
+      {
+        &quot;document_id&quot;: &quot;access&quot;,
+        &quot;chunk_id&quot;: &quot;a50c99907c9f69ac4b89cbc7&quot;,
+        &quot;text&quot;: &quot;Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 218
+      }
+    ],
+    &quot;latency_ms&quot;: 1.876
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>other-organization — When do access requests expire?</summary><pre>{
+  &quot;id&quot;: &quot;other-organization&quot;,
+  &quot;question&quot;: &quot;When do access requests expire?&quot;,
+  &quot;tags&quot;: [
+    &quot;isolation&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 1.0,
+    &quot;mrr&quot;: 1.0,
+    &quot;citation_precision&quot;: 1.0,
+    &quot;quote_integrity&quot;: 1.0,
+    &quot;answer_coverage&quot;: 1.0,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.661,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;Access requests in this separate organization expire after seven days.&quot;,
+    &quot;abstained&quot;: false,
+    &quot;citations&quot;: [
+      {
+        &quot;document_id&quot;: &quot;access&quot;,
+        &quot;chunk_id&quot;: &quot;2e8ec814bd8952b6ecbdd56b&quot;,
+        &quot;source&quot;: &quot;synthetic://other/access&quot;,
+        &quot;quote&quot;: &quot;Access requests in this separate organization expire after seven days.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 70
+      }
+    ],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;access&quot;,
+        &quot;chunk_id&quot;: &quot;2e8ec814bd8952b6ecbdd56b&quot;,
+        &quot;text&quot;: &quot;Access requests in this separate organization expire after seven days. This contradicting policy tests collection isolation and duplicate document IDs.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 151
+      }
+    ],
+    &quot;latency_ms&quot;: 1.661
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>unknown — What is the unicorn breeding schedule?</summary><pre>{
+  &quot;id&quot;: &quot;unknown&quot;,
+  &quot;question&quot;: &quot;What is the unicorn breeding schedule?&quot;,
+  &quot;tags&quot;: [
+    &quot;abstention&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: null,
+    &quot;mrr&quot;: null,
+    &quot;citation_precision&quot;: null,
+    &quot;quote_integrity&quot;: null,
+    &quot;answer_coverage&quot;: null,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.57,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;&quot;,
+    &quot;abstained&quot;: true,
+    &quot;citations&quot;: [],
+    &quot;retrieved&quot;: [],
+    &quot;latency_ms&quot;: 1.57
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>restricted — What is the executive salary?</summary><pre>{
+  &quot;id&quot;: &quot;restricted&quot;,
+  &quot;question&quot;: &quot;What is the executive salary?&quot;,
+  &quot;tags&quot;: [
+    &quot;abstention&quot;,
+    &quot;isolation&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: null,
+    &quot;mrr&quot;: null,
+    &quot;citation_precision&quot;: null,
+    &quot;quote_integrity&quot;: null,
+    &quot;answer_coverage&quot;: null,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.584,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;&quot;,
+    &quot;abstained&quot;: true,
+    &quot;citations&quot;: [],
+    &quot;retrieved&quot;: [],
+    &quot;latency_ms&quot;: 1.584
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>empty-collection — When do access requests expire?</summary><pre>{
+  &quot;id&quot;: &quot;empty-collection&quot;,
+  &quot;question&quot;: &quot;When do access requests expire?&quot;,
+  &quot;tags&quot;: [
+    &quot;abstention&quot;,
+    &quot;isolation&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: null,
+    &quot;mrr&quot;: null,
+    &quot;citation_precision&quot;: null,
+    &quot;quote_integrity&quot;: null,
+    &quot;answer_coverage&quot;: null,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.618,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;&quot;,
+    &quot;abstained&quot;: true,
+    &quot;citations&quot;: [],
+    &quot;retrieved&quot;: [],
+    &quot;latency_ms&quot;: 1.618
+  },
+  &quot;error&quot;: null
+}</pre></details>
+<p>Quote integrity is an exact-span check. It does not prove that an answer is semantically correct.</p></html>

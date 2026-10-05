@@ -1,0 +1,288 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evidence Gate: Paraphrases and exceptions / challenge v1</title>
+<style>body{max-width:960px;margin:48px auto;padding:0 24px;font:16px/1.6 system-ui;color:#152d36}
+h1{font-size:32px}table{border-collapse:collapse;width:100%}th,td{padding:8px 12px;border-bottom:1px solid #d4dce0;text-align:left}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f3f6f7;padding:16px;font-size:13px}
+details{margin:16px 0}summary{cursor:pointer}small{color:#52636d}</style>
+<h1>Evidence Gate / FAIL</h1><p>Paraphrases and exceptions / challenge v1 · 7 cases · replay</p>
+<small>Fixture fingerprint: 93f2ae16bbe6c3d1d0e43a0d0777fb41dd2b8b800bb02f88c3a54880909ba379<br>2026-10-05T20:44:22.532856+00:00</small>
+<h2>Metrics</h2><table><tr><th>abstention_accuracy</th><td>0.5714</td></tr><tr><th>answer_coverage</th><td>0.5000</td></tr><tr><th>citation_precision</th><td>0.5000</td></tr><tr><th>collection_integrity</th><td>1.0000</td></tr><tr><th>mrr</th><td>0.6667</td></tr><tr><th>quote_integrity</th><td>0.5000</td></tr><tr><th>recall_at_k</th><td>0.6667</td></tr><tr><th>success_rate</th><td>1.0000</td></tr><tr><th>p95_latency_ms</th><td>4.2620</td></tr></table><ul><li>recall_at_k: 0.6667 &lt; 0.9000</li><li>citation_precision: 0.5000 &lt; 0.9000</li><li>quote_integrity: 0.5000 &lt; 1.0000</li><li>answer_coverage: 0.5000 &lt; 0.9000</li><li>abstention_accuracy: 0.5714 &lt; 1.0000</li></ul><h2>Case details</h2><details><summary>backup-paraphrase — How frequently are copies of the database saved?</summary><pre>{
+  &quot;id&quot;: &quot;backup-paraphrase&quot;,
+  &quot;question&quot;: &quot;How frequently are copies of the database saved?&quot;,
+  &quot;tags&quot;: [
+    &quot;paraphrase&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 1.0,
+    &quot;mrr&quot;: 1.0,
+    &quot;citation_precision&quot;: 0.0,
+    &quot;quote_integrity&quot;: 0.0,
+    &quot;answer_coverage&quot;: 0.0,
+    &quot;abstention_accuracy&quot;: 0.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 4.262,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;&quot;,
+    &quot;abstained&quot;: true,
+    &quot;citations&quot;: [],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;backups&quot;,
+        &quot;chunk_id&quot;: &quot;5f75ae354ee500ec9cc891e2&quot;,
+        &quot;text&quot;: &quot;Database backups run every six hours and are retained for 35 days. Restore drills happen on the first Monday of each month. The recovery time objective is two hours, while the recovery point objective is six hours.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 214
+      }
+    ],
+    &quot;latency_ms&quot;: 4.262
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>receipt-paraphrase — Can I claim a 40-dollar meal without proof of payment?</summary><pre>{
+  &quot;id&quot;: &quot;receipt-paraphrase&quot;,
+  &quot;question&quot;: &quot;Can I claim a 40-dollar meal without proof of payment?&quot;,
+  &quot;tags&quot;: [
+    &quot;paraphrase&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 0.0,
+    &quot;mrr&quot;: 0.0,
+    &quot;citation_precision&quot;: 0.0,
+    &quot;quote_integrity&quot;: 0.0,
+    &quot;answer_coverage&quot;: 0.0,
+    &quot;abstention_accuracy&quot;: 0.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.81,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;&quot;,
+    &quot;abstained&quot;: true,
+    &quot;citations&quot;: [],
+    &quot;retrieved&quot;: [],
+    &quot;latency_ms&quot;: 1.81
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>recovery-paraphrase — How quickly should service return after data loss?</summary><pre>{
+  &quot;id&quot;: &quot;recovery-paraphrase&quot;,
+  &quot;question&quot;: &quot;How quickly should service return after data loss?&quot;,
+  &quot;tags&quot;: [
+    &quot;paraphrase&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 0.0,
+    &quot;mrr&quot;: 0.0,
+    &quot;citation_precision&quot;: 0.0,
+    &quot;quote_integrity&quot;: 0.0,
+    &quot;answer_coverage&quot;: 0.0,
+    &quot;abstention_accuracy&quot;: 0.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.84,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;&quot;,
+    &quot;abstained&quot;: true,
+    &quot;citations&quot;: [],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;incidents&quot;,
+        &quot;chunk_id&quot;: &quot;ef9bc7e6b64aa65a0a45b8c0&quot;,
+        &quot;text&quot;: &quot;For a severity-one incident, page the on-call engineer immediately. The incident commander posts an update every 20 minutes. A blameless incident review is due within five business days after resolution.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 203
+      },
+      {
+        &quot;document_id&quot;: &quot;retention&quot;,
+        &quot;chunk_id&quot;: &quot;04eaf1a494b9d54128d350a5&quot;,
+        &quot;text&quot;: &quot;Project working documents are retained for three years after project closure. Archived documents remain searchable until their retention deadline. Documents under a preservation hold must not be deleted until the hold is lifted.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 228
+      },
+      {
+        &quot;document_id&quot;: &quot;access&quot;,
+        &quot;chunk_id&quot;: &quot;a50c99907c9f69ac4b89cbc7&quot;,
+        &quot;text&quot;: &quot;Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 218
+      }
+    ],
+    &quot;latency_ms&quot;: 1.84
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>preservation-exception — Can documents be erased while a preservation hold is active?</summary><pre>{
+  &quot;id&quot;: &quot;preservation-exception&quot;,
+  &quot;question&quot;: &quot;Can documents be erased while a preservation hold is active?&quot;,
+  &quot;tags&quot;: [
+    &quot;exception&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 1.0,
+    &quot;mrr&quot;: 1.0,
+    &quot;citation_precision&quot;: 1.0,
+    &quot;quote_integrity&quot;: 1.0,
+    &quot;answer_coverage&quot;: 1.0,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.849,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;Documents under a preservation hold must not be deleted until the hold is lifted.&quot;,
+    &quot;abstained&quot;: false,
+    &quot;citations&quot;: [
+      {
+        &quot;document_id&quot;: &quot;retention&quot;,
+        &quot;chunk_id&quot;: &quot;04eaf1a494b9d54128d350a5&quot;,
+        &quot;source&quot;: &quot;synthetic://handbook/retention&quot;,
+        &quot;quote&quot;: &quot;Documents under a preservation hold must not be deleted until the hold is lifted.&quot;,
+        &quot;start&quot;: 147,
+        &quot;end&quot;: 228
+      }
+    ],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;retention&quot;,
+        &quot;chunk_id&quot;: &quot;04eaf1a494b9d54128d350a5&quot;,
+        &quot;text&quot;: &quot;Project working documents are retained for three years after project closure. Archived documents remain searchable until their retention deadline. Documents under a preservation hold must not be deleted until the hold is lifted.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 228
+      },
+      {
+        &quot;document_id&quot;: &quot;backups&quot;,
+        &quot;chunk_id&quot;: &quot;5f75ae354ee500ec9cc891e2&quot;,
+        &quot;text&quot;: &quot;Database backups run every six hours and are retained for 35 days. Restore drills happen on the first Monday of each month. The recovery time objective is two hours, while the recovery point objective is six hours.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 214
+      }
+    ],
+    &quot;latency_ms&quot;: 1.849
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>access-negation — Do contractors have write access by default?</summary><pre>{
+  &quot;id&quot;: &quot;access-negation&quot;,
+  &quot;question&quot;: &quot;Do contractors have write access by default?&quot;,
+  &quot;tags&quot;: [
+    &quot;negation&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 1.0,
+    &quot;mrr&quot;: 1.0,
+    &quot;citation_precision&quot;: 1.0,
+    &quot;quote_integrity&quot;: 1.0,
+    &quot;answer_coverage&quot;: 1.0,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.729,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;Contractors receive read-only access by default.&quot;,
+    &quot;abstained&quot;: false,
+    &quot;citations&quot;: [
+      {
+        &quot;document_id&quot;: &quot;access&quot;,
+        &quot;chunk_id&quot;: &quot;a50c99907c9f69ac4b89cbc7&quot;,
+        &quot;source&quot;: &quot;synthetic://handbook/access&quot;,
+        &quot;quote&quot;: &quot;Contractors receive read-only access by default.&quot;,
+        &quot;start&quot;: 83,
+        &quot;end&quot;: 131
+      }
+    ],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;access&quot;,
+        &quot;chunk_id&quot;: &quot;a50c99907c9f69ac4b89cbc7&quot;,
+        &quot;text&quot;: &quot;Access requests require approval from the resource owner and expire after 90 days. Contractors receive read-only access by default. Departing employees lose all application access by the end of their final working day.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 218
+      }
+    ],
+    &quot;latency_ms&quot;: 1.729
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>unsupported-hotel — Which hotel chain should I book?</summary><pre>{
+  &quot;id&quot;: &quot;unsupported-hotel&quot;,
+  &quot;question&quot;: &quot;Which hotel chain should I book?&quot;,
+  &quot;tags&quot;: [
+    &quot;abstention&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: null,
+    &quot;mrr&quot;: null,
+    &quot;citation_precision&quot;: null,
+    &quot;quote_integrity&quot;: null,
+    &quot;answer_coverage&quot;: null,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.653,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;&quot;,
+    &quot;abstained&quot;: true,
+    &quot;citations&quot;: [],
+    &quot;retrieved&quot;: [],
+    &quot;latency_ms&quot;: 1.653
+  },
+  &quot;error&quot;: null
+}</pre></details><details><summary>subscription-paraphrase — Is buying a new SaaS subscription allowed before a security review?</summary><pre>{
+  &quot;id&quot;: &quot;subscription-paraphrase&quot;,
+  &quot;question&quot;: &quot;Is buying a new SaaS subscription allowed before a security review?&quot;,
+  &quot;tags&quot;: [
+    &quot;paraphrase&quot;
+  ],
+  &quot;metrics&quot;: {
+    &quot;recall_at_k&quot;: 1.0,
+    &quot;mrr&quot;: 1.0,
+    &quot;citation_precision&quot;: 1.0,
+    &quot;quote_integrity&quot;: 1.0,
+    &quot;answer_coverage&quot;: 1.0,
+    &quot;abstention_accuracy&quot;: 1.0,
+    &quot;collection_integrity&quot;: 1.0,
+    &quot;success_rate&quot;: 1.0
+  },
+  &quot;latency_ms&quot;: 1.789,
+  &quot;prediction&quot;: {
+    &quot;answer&quot;: &quot;Software subscriptions also need a security review before purchase.&quot;,
+    &quot;abstained&quot;: false,
+    &quot;citations&quot;: [
+      {
+        &quot;document_id&quot;: &quot;procurement&quot;,
+        &quot;chunk_id&quot;: &quot;e07a9e28e1d3a8ca33844961&quot;,
+        &quot;source&quot;: &quot;synthetic://handbook/procurement&quot;,
+        &quot;quote&quot;: &quot;Software subscriptions also need a security review before purchase.&quot;,
+        &quot;start&quot;: 64,
+        &quot;end&quot;: 131
+      }
+    ],
+    &quot;retrieved&quot;: [
+      {
+        &quot;document_id&quot;: &quot;procurement&quot;,
+        &quot;chunk_id&quot;: &quot;e07a9e28e1d3a8ca33844961&quot;,
+        &quot;text&quot;: &quot;Purchases above 5000 dollars require two independent approvals. Software subscriptions also need a security review before purchase. Approved vendors are reassessed every twelve months.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 184
+      },
+      {
+        &quot;document_id&quot;: &quot;onboarding&quot;,
+        &quot;chunk_id&quot;: &quot;95492ba0afbc9abfb452ec62&quot;,
+        &quot;text&quot;: &quot;New employees complete security training within their first ten working days. Their manager assigns a mentor during the first week. Equipment requests go to the workplace services queue.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 186
+      },
+      {
+        &quot;document_id&quot;: &quot;travel&quot;,
+        &quot;chunk_id&quot;: &quot;f3d1301128f8902797eabd79&quot;,
+        &quot;text&quot;: &quot;Travel reimbursements must be submitted within 30 days of the trip ending. Every expense over 25 dollars requires an itemized receipt. International travel needs approval from the department lead before booking.&quot;,
+        &quot;start&quot;: 0,
+        &quot;end&quot;: 211
+      }
+    ],
+    &quot;latency_ms&quot;: 1.789
+  },
+  &quot;error&quot;: null
+}</pre></details>
+<p>Quote integrity is an exact-span check. It does not prove that an answer is semantically correct.</p></html>

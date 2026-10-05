@@ -1,0 +1,21 @@
+{
+  "name": "Synthetic workplace knowledge / v1",
+  "cases": [
+    {"id":"travel-deadline","question":"When must travel reimbursements be submitted?","relevant_documents":["travel"],"expected_phrases":["30 days"],"tags":["policy"]},
+    {"id":"receipt","question":"Which expense requires an itemized receipt?","relevant_documents":["travel"],"expected_phrases":["25 dollars"],"tags":["policy"]},
+    {"id":"access-expiry","question":"When do access requests expire?","relevant_documents":["access"],"expected_phrases":["90 days"],"tags":["policy","isolation"]},
+    {"id":"contractors","question":"What access do contractors receive?","relevant_documents":["access"],"expected_phrases":["read-only"],"tags":["policy"]},
+    {"id":"backup-frequency","question":"How often do database backups run?","relevant_documents":["backups"],"expected_phrases":["six hours"],"tags":["operations"]},
+    {"id":"restore-drill","question":"When do restore drills happen?","relevant_documents":["backups"],"expected_phrases":["first Monday"],"tags":["operations"]},
+    {"id":"incident-updates","question":"How often does the incident commander post an update?","relevant_documents":["incidents"],"expected_phrases":["20 minutes"],"tags":["operations"]},
+    {"id":"release-checks","question":"What do production releases require?","relevant_documents":["releases"],"expected_phrases":["unit tests","retrieval regression checks"],"tags":["engineering"]},
+    {"id":"retention","question":"How long are project working documents retained?","relevant_documents":["retention"],"expected_phrases":["three years"],"tags":["policy"]},
+    {"id":"training","question":"When do new employees complete security training?","relevant_documents":["onboarding"],"expected_phrases":["ten working days"],"tags":["onboarding"]},
+    {"id":"purchases","question":"Which purchases require two independent approvals?","relevant_documents":["procurement"],"expected_phrases":["5000 dollars"],"tags":["policy"]},
+    {"id":"other-organization","question":"When do access requests expire?","collection":"other","relevant_documents":["access"],"expected_phrases":["seven days"],"tags":["isolation"]},
+    {"id":"unknown","question":"What is the unicorn breeding schedule?","should_abstain":true,"tags":["abstention"]},
+    {"id":"restricted","question":"What is the executive salary?","should_abstain":true,"tags":["abstention","isolation"]},
+    {"id":"empty-collection","question":"When do access requests expire?","collection":"missing","should_abstain":true,"tags":["abstention","isolation"]}
+  ]
+}
+

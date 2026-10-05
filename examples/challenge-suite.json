@@ -1,0 +1,12 @@
+{
+  "name": "Paraphrases and exceptions / challenge v1",
+  "cases": [
+    {"id":"backup-paraphrase","question":"How frequently are copies of the database saved?","relevant_documents":["backups"],"expected_phrases":["six hours"],"tags":["paraphrase"]},
+    {"id":"receipt-paraphrase","question":"Can I claim a 40-dollar meal without proof of payment?","relevant_documents":["travel"],"expected_phrases":["25 dollars","itemized receipt"],"tags":["paraphrase"]},
+    {"id":"recovery-paraphrase","question":"How quickly should service return after data loss?","relevant_documents":["backups"],"expected_phrases":["two hours"],"tags":["paraphrase"]},
+    {"id":"preservation-exception","question":"Can documents be erased while a preservation hold is active?","relevant_documents":["retention"],"expected_phrases":["must not be deleted"],"tags":["exception"]},
+    {"id":"access-negation","question":"Do contractors have write access by default?","relevant_documents":["access"],"expected_phrases":["read-only"],"tags":["negation"]},
+    {"id":"unsupported-hotel","question":"Which hotel chain should I book?","should_abstain":true,"tags":["abstention"]},
+    {"id":"subscription-paraphrase","question":"Is buying a new SaaS subscription allowed before a security review?","relevant_documents":["procurement"],"expected_phrases":["before purchase"],"tags":["paraphrase"]}
+  ]
+}
